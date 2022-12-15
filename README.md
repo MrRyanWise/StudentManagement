@@ -1,7 +1,7 @@
 # StudentManagement
 Welcome to my student management project that would help scholis easily and automatically manage their students.
 
-This application manage student enroliments and balance and have many functionalities like:
+This application manages student enrollment and balance and has many features such as:
 
 <ol>
     <li>Ask the user how many new students will be added to the databas</li>
@@ -19,3 +19,9 @@ This application manage student enroliments and balance and have many functional
     <li>The student should be able to view their balance and pay the tuition</li>
     <li>To see the status of the student, we should see their name, ID, courses enrliled, and balance</li>
 </ol>
+
+Reminder :
+-> git add (nom du fichier ou dossier) ou .
+-> git commit -m "message"
+-> git pull
+-> git push -u origin main
