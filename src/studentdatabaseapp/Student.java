@@ -8,10 +8,13 @@ public class Student {
     private String firstName;
     private String lastName;
     private String gradeYear;
-    private int studentID;
-    private String courses;
+    // static means that the property is not specified for the object only
+    private static int id = 1000;
+    private static int costOfCourse = 600;
+    private String courses = "";
+    private String studentID;
     private int tuitionBalance;
-    private int costOfCourse = 600;
+
 
     // Constructor
     public Student() {
@@ -25,6 +28,38 @@ public class Student {
         System.out.print("1 - Freshmen\n2 - Sophmore\n3 - Junior\n4 - Senior\nEnter student class level : ");
         this.gradeYear = in.nextLine();
 
-        System.out.print(firstName + " " + lastName + " " + gradeYear);
+        setStudentId();
+
+        System.out.print(firstName + " " + lastName + " " + gradeYear + " " + studentID + "\n");
+
+    }
+
+    // Generate an ID
+    private void setStudentId() {
+        // Grade Level + ID
+        id++;
+        this.studentID = gradeYear + "" + id;
+    }
+
+    // Enroll in courses
+    public void enroll() {
+        // Get inside a loop user hits 0
+        do {
+            System.out.println("Enter course to enroll (Q to quit) : ");
+            Scanner in = new Scanner(System.in);
+            String course = in.nextLine();
+
+            if (!course.equals("Q")) {
+                courses += course + "\n";
+                tuitionBalance = tuitionBalance + costOfCourse;
+            } else {
+                System.out.println("END !\n");
+                break;
+            }
+
+        } while (true);
+
+        System.out.println("ENROLLED IN : " + courses);
+        System.out.println("TUITION BALANCE : " + tuitionBalance);
     }
 }
