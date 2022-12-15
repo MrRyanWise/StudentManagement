@@ -20,6 +20,7 @@ This application manages student enrollment and balance and has many features su
     <li>To see the status of the student, we should see their name, ID, courses enrliled, and balance</li>
 </ol>
 
+<img src="https://github.com/MrRyanWise/StudentManagement/blob/main/src/img/logo.png?raw=true"/>
 Reminder :
 -> git add (nom du fichier ou dossier) ou .
 -> git commit -m "message"
