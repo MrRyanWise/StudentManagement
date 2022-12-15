@@ -45,7 +45,7 @@ public class Student {
     public void enroll() {
         // Get inside a loop user hits 0
         do {
-            System.out.println("Enter course to enroll (Q to quit) : ");
+            System.out.println("\nEnter course to enroll (Q to quit) : ");
             Scanner in = new Scanner(System.in);
             String course = in.nextLine();
 
@@ -59,7 +59,24 @@ public class Student {
 
         } while (true);
 
-        System.out.println("ENROLLED IN : " + courses);
-        System.out.println("TUITION BALANCE : " + tuitionBalance);
+        System.out.println("\nENROLLED IN : " + courses);
+        System.out.println("\nTUITION BALANCE : " + tuitionBalance);
+    }
+
+    // View the balance
+    public void viewBalance() {
+        System.out.println("\nYour balance is : $" + tuitionBalance);
+    }
+
+    // Pay Tuition
+    public void payTuition() {
+
+        System.out.println("\nAdd your payment: ");
+        Scanner in = new Scanner(System.in);
+        int payment = new Integer(in.nextLine());
+
+        tuitionBalance = tuitionBalance - payment;
+        System.out.println("\nThank you for your payment of $" + payment);
+        viewBalance();
     }
 }
