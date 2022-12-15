@@ -12,7 +12,7 @@ public class StudentDataBaseApp {
         student.enroll();
         student.payTuition();
         System.out.println(student);
-        
+
 
         // Ask how many new users we want to add
         System.out.println("Enter number of new students to enroll :");

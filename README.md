@@ -21,8 +21,4 @@ This application manages student enrollment and balance and has many features su
 </ol>
 
 <img src="https://github.com/MrRyanWise/StudentManagement/blob/main/src/img/logo.png?raw=true"/>
-Reminder :
--> git add (nom du fichier ou dossier) ou .
--> git commit -m "message"
--> git pull
--> git push -u origin main
+
